@@ -1,0 +1,171 @@
+---
+#Front matter so Jekylle with proccess this file
+#Color Scheme: https://coolors.co/217fb3-e20376-ffffff-658490-fad4e8
+---
+
+$color-accent-orange: #f37e17;
+$color-accent-purple: #500cae;
+$color-accent-pink: #e20376;
+$color-accent-metal: #02344b;
+$color-accent-blue: #217fb3;
+$color-orange-light: #f4c311;
+$color-gray-dark: #434343;
+$color-gray-light: #838486;
+$color-gray-lightest: #bebfc1;
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+
+body {
+  background: #fff;
+}
+
+#comoblockchainsummit-header {
+  background: $color-accent-pink;
+  background-size: cover;
+  text-align: center;
+
+  .comoblockchainsummit-header-content {
+    text-align: center;
+    background: #fff;
+
+    @media (min-width: $breakpoint-sm) {
+      margin: 1.5em auto;
+      margin-bottom: 0px;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      margin: 3em auto;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+#comoblockchainsummit-description {
+  background: $color-accent-purple;
+  padding: 0.5em;
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 1em;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    padding: 1.5em;
+  }
+
+  .comoblockchainsummit-title {
+    color: $color-accent-orange;
+    font-weight: bold;
+  }
+  .comoblockchainsummit-subtitle {
+    color: $color-orange-light;
+  }
+  .comoblockchainsummit-blurb {
+    color: #fff;
+  }
+}
+
+#comoblockchainsummit-cta {
+  min-height: 10em;
+  background: $color-orange-light;
+  .comoblockchainsummit-speaker-signup-cta {
+    margin: 0.5em auto;
+    text-align: center;
+    border: solid $color-accent-blue 2px;
+    border-radius: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: $color-accent-blue;
+    box-shadow: $color-gray-dark 0.25em 0.25em 0.25em;
+
+    @media(min-width: $breakpoint-sm) {
+      margin: 1em auto;
+    }
+
+    @media(min-width: breakpoint-md) {
+      margin: 2em auto;
+    }
+
+    &:hover {
+      box-shadow: $color-gray-dark 0.50em 0.50em 0.50em;
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      .comoblockchainsummit-speaker-button {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+#comoblockchainsummit-location {
+  text-align: center;
+  background: $color-gray-lightest;
+  color: $color-accent-metal;
+  font-size: 2em;
+  padding: 0.25em 0;
+
+  @media(min-width: $breakpoint-sm) {
+    padding: 1em;
+  }
+
+  @media(min-width: breakpoint-md) {
+    padding: 2em;
+  }
+
+  em {
+    color: $color-accent-orange;
+  }
+}
+
+#comoblockchainsummit-mailinglist {
+  background: $color-accent-pink;
+  color: white;
+
+  #comoblockchainsummit-mailinglist-signup {
+    @media(min-width: $breakpoint-sm) {
+      padding: 0.5em;
+    }
+
+    @media(min-width: breakpoint-md) {
+      padding: 1em;
+    }
+
+  }
+}
+
+
+#comoblockchainsummit-sponsors {
+  background: white;
+
+  @media(min-width: $breakpoint-sm) {
+    padding: 0.5em;
+  }
+
+  @media(min-width: breakpoint-md) {
+    padding: 1em;
+  }
+
+  a {
+    color: black;
+  }
+
+  .comoblockchainsummit-sponsor {
+    text-align: center;
+    padding: 0.5em;
+
+    .comoblockchainsummit-sponsor-image {
+      max-height: 10em;
+    }
+
+    .comoblockchainsummit-sponsor-name {
+      font-size: 2em;
+    }
+  }
+}
